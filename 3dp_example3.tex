@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{psfrag}
+\usepackage{3dpaizu_preamble}
+
+\begin{document}
+\begin{center}
+\begin{picture}(300,300)
+\linethickness{.2mm}
+
+% Draw a box frame
+\put(0,300){\line(1,0){300}}\put(0,0){\line(1,0){300}}  % horizontal
+\put(300,0){\line(0,1){300}}\put(0,0){\line(0,1){300}}  % vertical
+
+% Define hands -------------
+
+% Mine
+\put(20,20){\rotatebox{0}{
+\cmab\dmab\fmab\gmab\hmab\bsob\dsob\fsob\fpib\fpib\fpib\gpib\hpib~\esob}}
+
+% kamicha (left player)
+\put(15,235){\rotatebox{270}{\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji}}
+
+% shimocha (right player)
+\put(268,65){\rotatebox{90}{\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji}}
+
+% toimen (facing player)
+\put(65,285){\rotatebox{180}{\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji~\ama\amal\ama}}
+
+% Draw the middle board--------------
+\linethickness{.5mm}
+\put(111,111){\line(1,0){78}}\put(111,189){\line(1,0){78}}\put(111,111){\line(0,1){78}}\put(189,111){\line(0,1){78}}
+\linethickness{.2mm}
+\put(135, 170){East-1}
+%\put(130, 170){South-4}
+\put(125, 153){\includegraphics[width=.015\textwidth, angle=90]{1000thick} \footnotesize $\times$ 0}
+\put(125, 143){\includegraphics[width=.015\textwidth, angle=90]{100thick} \footnotesize $\times$ 0}
+\put(120, 120){\fma\iji\iji\iji\iji}
+
+
+% Player scores--------------
+\put(127, 2){South: 25000}
+\put(290, 120){\rotatebox{90}{West: 25000}}
+\put(116, 298){\rotatebox{180}{North: 25000}}
+\put(2, 179){\rotatebox{270}{East: 25000}}
+
+
+% Discard ponds--------------
+% mine
+\put(113,89){\rotatebox{0}{\gji\dji\bji\fji\bpi\cji}}
+
+% kamicha (left player)
+\put(91,186){\rotatebox{270}{\aji\fji\eji\bso\fji\hpi}}
+	\put(70,186){\rotatebox{270}{\bji\cso}}
+
+% shimocha (right player)
+\put(194,114){\rotatebox{90}{\ipi\bji\eji\cji\hso\bpi}}
+
+% toimen (facing player)
+\put(113,210){\rotatebox{180}{\gpi\ipi\hso\eso\dso\cpi}}
+	\put(173,229){\rotatebox{180}{\aso}}
+
+
+% Grid: this maybe helpful when adjusting the locations of images
+
+%\linethickness{.1mm}
+%\put(0,111){\line(1,0){300}} % horizontal
+%\put(0,189){\line(1,0){300}} % horizontal
+%\put(111,0){\line(0,1){300}} % vertical
+%\put(189,0){\line(0,1){300}} % vertical
+%\linethickness{.1mm}
+%\put(0,225){\line(1,0){300}} % horizontal
+%\put(0,150){\line(1,0){300}} % horizontal
+%\put(0,75){\line(1,0){300}} % horizontal
+%\put(75,0){\line(0,1){300}} % vertical
+%\put(150,0){\line(0,1){300}} % vertical
+%\put(225,0){\line(0,1){300}} % vertical
+
+\end{picture}
+\end{center}
+
+\end{document}
+

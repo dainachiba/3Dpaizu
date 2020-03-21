@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{psfrag}
+\usepackage{3dpaizu_preamble}
+
+\begin{document}
+\begin{center}
+\begin{picture}(300,300)
+\linethickness{.2mm}
+
+% Draw a box frame
+\put(0,300){\line(1,0){300}}\put(0,0){\line(1,0){300}}  % horizontal
+\put(300,0){\line(0,1){300}}\put(0,0){\line(0,1){300}}  % vertical
+
+% Define hands -------------
+
+% Mine
+\put(20,20){\rotatebox{0}{
+\amab\bmab\cmab\gmab\gmab\bpib\cpib\cpib\bsob\csob\dsob\esob\fsob~\gsob}}
+
+% kamicha (left player)
+\put(15,235){\rotatebox{270}{\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji}}
+
+% shimocha (right player)
+\put(268,65){\rotatebox{90}{\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji~\fpi\fpil\fpi}}
+
+% toimen (facing player)
+\put(65,285){\rotatebox{180}{\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji\iji}}
+
+% Draw the middle board--------------
+\linethickness{.5mm}
+\put(111,111){\line(1,0){78}}\put(111,189){\line(1,0){78}}\put(111,111){\line(0,1){78}}\put(189,111){\line(0,1){78}}
+\linethickness{.2mm}
+\put(130, 170){South-4}
+\put(125, 153){\includegraphics[width=.015\textwidth, angle=90]{1000thick} \footnotesize $\times$ 0}
+\put(125, 143){\includegraphics[width=.015\textwidth, angle=90]{100thick} \footnotesize $\times$ 0}
+\put(120, 120){\jpi\iji\iji\iji\iji}
+
+
+% Player scores--------------
+\put(127, 2){East: 35700}
+\put(290, 120){\rotatebox{90}{South: 24000}}
+\put(116, 298){\rotatebox{180}{West: 16400}}
+\put(2, 179){\rotatebox{270}{North: 23900}}
+
+%\put(150,1){\line(0,1){300}}
+%\put(1,150){\line(1,0){300}}
+
+
+% Discard ponds--------------
+% mine
+\put(113,89){\rotatebox{0}{\bji\eji\ipi\hso\jma}}
+%	\put(113,70){\rotatebox{0}{\aso\bpi\bmad\hma\gji\fpi}}
+%	\put(113,51){\rotatebox{0}{\aso\bpi\bmad\hma\gji\fpi}}
+
+% kamicha (left player)
+\put(91,186){\rotatebox{270}{\aso\cji\eji\ipi\hma}}
+%	\put(70,186){\rotatebox{270}{\aso\bpi\ima\hma\gji\fpi}}
+%	\put(51,186){\rotatebox{270}{\aso\bpi\ima\hma\gji\fpi}}
+
+% shimocha (right player)
+\put(194,114){\rotatebox{90}{\aso\aji\bji\cji\ama\bso}}
+%	\put(213,114){\rotatebox{90}{\aso\bpi\ima\hma\gji\fpi}}
+%	\put(232,114){\rotatebox{90}{\aso\bpi\ima\hma\gji\fpi}}
+
+% toimen (facing player)
+\put(113,210){\rotatebox{180}{\dji\aso\aji\dji\ipi\bso}}
+%	\put(113,229){\rotatebox{180}{\aso\bpi\ima\hma\gji\fpi}}
+%	\put(113,248){\rotatebox{180}{\aso\bpi\ima\hma\gji\fpi}}
+
+
+% Grid: this maybe helpful when adjusting the locations of images
+
+%\linethickness{.1mm}
+%\put(0,111){\line(1,0){300}} % horizontal
+%\put(0,189){\line(1,0){300}} % horizontal
+%\put(111,0){\line(0,1){300}} % vertical
+%\put(189,0){\line(0,1){300}} % vertical
+%\linethickness{.1mm}
+%\put(0,225){\line(1,0){300}} % horizontal
+%\put(0,150){\line(1,0){300}} % horizontal
+%\put(0,75){\line(1,0){300}} % horizontal
+%\put(75,0){\line(0,1){300}} % vertical
+%\put(150,0){\line(0,1){300}} % vertical
+%\put(225,0){\line(0,1){300}} % vertical
+
+\end{picture}
+\end{center}
+
+\end{document}
+

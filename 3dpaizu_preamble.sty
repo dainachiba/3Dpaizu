@@ -1,0 +1,153 @@
+% graphic commands
+\usepackage{graphicx} 
+\usepackage[dvipdfmx]{pict2e}
+
+% Space, Header, section structure
+\setcounter{tocdepth}{1} %\setcounter{secnumdepth}{1}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{placeins}
+\usepackage{sectsty}
+\usepackage{appendix}
+\usepackage{makeidx}
+\usepackage{lscape}
+\usepackage{bxascmac}
+\usepackage{verbatim}
+\usepackage{multicol}
+
+%Paper size: A5
+\usepackage[11pt]{extsizes}
+\usepackage[paperwidth=110mm, paperheight=109mm, top=2mm, bottom = 1mm, inner=2mm, outer = 2mm]{geometry}
+\special{papersize=110mm,109mm}
+
+% Tile images
+\graphicspath{{./figs/}}
+
+% Regular tiles
+\newcommand{\aso}{\includegraphics[width=.04\textwidth]{1s}}
+\newcommand{\bso}{\includegraphics[width=.04\textwidth]{2s}}
+\newcommand{\cso}{\includegraphics[width=.04\textwidth]{3s}}
+\newcommand{\dso}{\includegraphics[width=.04\textwidth]{4s}}
+\newcommand{\eso}{\includegraphics[width=.04\textwidth]{5s}}
+\newcommand{\fso}{\includegraphics[width=.04\textwidth]{6s}}
+\newcommand{\gso}{\includegraphics[width=.04\textwidth]{7s}}
+\newcommand{\hso}{\includegraphics[width=.04\textwidth]{8s}}
+\newcommand{\iso}{\includegraphics[width=.04\textwidth]{9s}}
+\newcommand{\jso}{\includegraphics[width=.04\textwidth]{5sr}}
+\newcommand{\ama}{\includegraphics[width=.04\textwidth]{1m}}
+\newcommand{\bma}{\includegraphics[width=.04\textwidth]{2m}}
+\newcommand{\cma}{\includegraphics[width=.04\textwidth]{3m}}
+\newcommand{\dma}{\includegraphics[width=.04\textwidth]{4m}}
+\newcommand{\ema}{\includegraphics[width=.04\textwidth]{5m}}
+\newcommand{\fma}{\includegraphics[width=.04\textwidth]{6m}}
+\newcommand{\gma}{\includegraphics[width=.04\textwidth]{7m}}
+\newcommand{\hma}{\includegraphics[width=.04\textwidth]{8m}}
+\newcommand{\ima}{\includegraphics[width=.04\textwidth]{9m}}
+\newcommand{\jma}{\includegraphics[width=.04\textwidth]{5mr}}
+\newcommand{\api}{\includegraphics[width=.04\textwidth]{1p}}
+\newcommand{\bpi}{\includegraphics[width=.04\textwidth]{2p}}
+\newcommand{\cpi}{\includegraphics[width=.04\textwidth]{3p}}
+\newcommand{\dpi}{\includegraphics[width=.04\textwidth]{4p}}
+\newcommand{\epi}{\includegraphics[width=.04\textwidth]{5p}}
+\newcommand{\fpi}{\includegraphics[width=.04\textwidth]{6p}}
+\newcommand{\gpi}{\includegraphics[width=.04\textwidth]{7p}}
+\newcommand{\hpi}{\includegraphics[width=.04\textwidth]{8p}}
+\newcommand{\ipi}{\includegraphics[width=.04\textwidth]{9p}}
+\newcommand{\jpi}{\includegraphics[width=.04\textwidth]{5pr}}
+\newcommand{\aji}{\includegraphics[width=.04\textwidth]{1z}}
+\newcommand{\bji}{\includegraphics[width=.04\textwidth]{2z}}
+\newcommand{\cji}{\includegraphics[width=.04\textwidth]{3z}}
+\newcommand{\dji}{\includegraphics[width=.04\textwidth]{4z}}
+\newcommand{\eji}{\includegraphics[width=.04\textwidth]{5z}}
+\newcommand{\fji}{\includegraphics[width=.04\textwidth]{6z}}
+\newcommand{\gji}{\includegraphics[width=.04\textwidth]{7z}}
+\newcommand{\iji}{\includegraphics[width=.04\textwidth]{0z}}
+
+% Rotated by 90 degrees
+\newcommand{\asol}{\includegraphics[width=.04\textwidth, angle=90]{1s}}
+\newcommand{\bsol}{\includegraphics[width=.04\textwidth, angle=90]{2s}}
+\newcommand{\csol}{\includegraphics[width=.04\textwidth, angle=90]{3s}}
+\newcommand{\dsol}{\includegraphics[width=.04\textwidth, angle=90]{4s}}
+\newcommand{\esol}{\includegraphics[width=.04\textwidth, angle=90]{5s}}
+\newcommand{\fsol}{\includegraphics[width=.04\textwidth, angle=90]{6s}}
+\newcommand{\gsol}{\includegraphics[width=.04\textwidth, angle=90]{7s}}
+\newcommand{\hsol}{\includegraphics[width=.04\textwidth, angle=90]{8s}}
+\newcommand{\isol}{\includegraphics[width=.04\textwidth, angle=90]{9s}}
+\newcommand{\jsol}{\includegraphics[width=.04\textwidth, angle=90]{5sr}}
+\newcommand{\amal}{\includegraphics[width=.04\textwidth, angle=90]{1m}}
+\newcommand{\bmal}{\includegraphics[width=.04\textwidth, angle=90]{2m}}
+\newcommand{\cmal}{\includegraphics[width=.04\textwidth, angle=90]{3m}}
+\newcommand{\dmal}{\includegraphics[width=.04\textwidth, angle=90]{4m}}
+\newcommand{\emal}{\includegraphics[width=.04\textwidth, angle=90]{5m}}
+\newcommand{\fmal}{\includegraphics[width=.04\textwidth, angle=90]{6m}}
+\newcommand{\gmal}{\includegraphics[width=.04\textwidth, angle=90]{7m}}
+\newcommand{\hmal}{\includegraphics[width=.04\textwidth, angle=90]{8m}}
+\newcommand{\imal}{\includegraphics[width=.04\textwidth, angle=90]{9m}}
+\newcommand{\jmal}{\includegraphics[width=.04\textwidth, angle=90]{5mr}}
+\newcommand{\apil}{\includegraphics[width=.04\textwidth, angle=90]{1p}}
+\newcommand{\bpil}{\includegraphics[width=.04\textwidth, angle=90]{2p}}
+\newcommand{\cpil}{\includegraphics[width=.04\textwidth, angle=90]{3p}}
+\newcommand{\dpil}{\includegraphics[width=.04\textwidth, angle=90]{4p}}
+\newcommand{\epil}{\includegraphics[width=.04\textwidth, angle=90]{5p}}
+\newcommand{\fpil}{\includegraphics[width=.04\textwidth, angle=90]{6p}}
+\newcommand{\gpil}{\includegraphics[width=.04\textwidth, angle=90]{7p}}
+\newcommand{\hpil}{\includegraphics[width=.04\textwidth, angle=90]{8p}}
+\newcommand{\ipil}{\includegraphics[width=.04\textwidth, angle=90]{9p}}
+\newcommand{\jpil}{\includegraphics[width=.04\textwidth, angle=90]{5pr}}
+\newcommand{\ajil}{\includegraphics[width=.04\textwidth, angle=90]{1z}}
+\newcommand{\bjil}{\includegraphics[width=.04\textwidth, angle=90]{2z}}
+\newcommand{\cjil}{\includegraphics[width=.04\textwidth, angle=90]{3z}}
+\newcommand{\djil}{\includegraphics[width=.04\textwidth, angle=90]{4z}}
+\newcommand{\ejil}{\includegraphics[width=.04\textwidth, angle=90]{5z}}
+\newcommand{\fjil}{\includegraphics[width=.04\textwidth, angle=90]{6z}}
+\newcommand{\gjil}{\includegraphics[width=.04\textwidth, angle=90]{7z}}
+
+% Slightly bigger (for my hands)width=.06
+\newcommand{\asob}{\includegraphics[width=.06\textwidth]{1s}}
+\newcommand{\bsob}{\includegraphics[width=.06\textwidth]{2s}}
+\newcommand{\csob}{\includegraphics[width=.06\textwidth]{3s}}
+\newcommand{\dsob}{\includegraphics[width=.06\textwidth]{4s}}
+\newcommand{\esob}{\includegraphics[width=.06\textwidth]{5s}}
+\newcommand{\fsob}{\includegraphics[width=.06\textwidth]{6s}}
+\newcommand{\gsob}{\includegraphics[width=.06\textwidth]{7s}}
+\newcommand{\hsob}{\includegraphics[width=.06\textwidth]{8s}}
+\newcommand{\isob}{\includegraphics[width=.06\textwidth]{9s}}
+\newcommand{\jsob}{\includegraphics[width=.06\textwidth]{5sr}}
+\newcommand{\amab}{\includegraphics[width=.06\textwidth]{1m}}
+\newcommand{\bmab}{\includegraphics[width=.06\textwidth]{2m}}
+\newcommand{\cmab}{\includegraphics[width=.06\textwidth]{3m}}
+\newcommand{\dmab}{\includegraphics[width=.06\textwidth]{4m}}
+\newcommand{\emab}{\includegraphics[width=.06\textwidth]{5m}}
+\newcommand{\fmab}{\includegraphics[width=.06\textwidth]{6m}}
+\newcommand{\gmab}{\includegraphics[width=.06\textwidth]{7m}}
+\newcommand{\hmab}{\includegraphics[width=.06\textwidth]{8m}}
+\newcommand{\imab}{\includegraphics[width=.06\textwidth]{9m}}
+\newcommand{\jmab}{\includegraphics[width=.06\textwidth]{5mr}}
+\newcommand{\apib}{\includegraphics[width=.06\textwidth]{1p}}
+\newcommand{\bpib}{\includegraphics[width=.06\textwidth]{2p}}
+\newcommand{\cpib}{\includegraphics[width=.06\textwidth]{3p}}
+\newcommand{\dpib}{\includegraphics[width=.06\textwidth]{4p}}
+\newcommand{\epib}{\includegraphics[width=.06\textwidth]{5p}}
+\newcommand{\fpib}{\includegraphics[width=.06\textwidth]{6p}}
+\newcommand{\gpib}{\includegraphics[width=.06\textwidth]{7p}}
+\newcommand{\hpib}{\includegraphics[width=.06\textwidth]{8p}}
+\newcommand{\ipib}{\includegraphics[width=.06\textwidth]{9p}}
+\newcommand{\jpib}{\includegraphics[width=.06\textwidth]{5pr}}
+\newcommand{\ajib}{\includegraphics[width=.06\textwidth]{1z}}
+\newcommand{\bjib}{\includegraphics[width=.06\textwidth]{2z}}
+\newcommand{\cjib}{\includegraphics[width=.06\textwidth]{3z}}
+\newcommand{\djib}{\includegraphics[width=.06\textwidth]{4z}}
+\newcommand{\ejib}{\includegraphics[width=.06\textwidth]{5z}}
+\newcommand{\fjib}{\includegraphics[width=.06\textwidth]{6z}}
+\newcommand{\gjib}{\includegraphics[width=.06\textwidth]{7z}}
+\newcommand{\ijib}{\includegraphics[width=.06\textwidth]{0z}}
+
+% Bigger & rotated
+\newcommand{\ejibl}{\includegraphics[width=.06\textwidth, angle=90]{5z}}
+\newcommand{\fjibl}{\includegraphics[width=.06\textwidth, angle=90]{6z}}
+\newcommand{\gjibl}{\includegraphics[width=.06\textwidth, angle=90]{7z}}
+
+
+% Shaded tiles (show origin of calls)
+\newcommand{\bmad}{\includegraphics[width=.04\textwidth]{2md}}
+
